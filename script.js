@@ -23,9 +23,6 @@ form.addEventListener("submit", function(event) {
     };
 
     tasks.push(task);
-
-    taskInput.value = "";
-
     displayTasks();
 });
 
@@ -36,7 +33,8 @@ function displayTasks() {
         const task = tasks[i];
 
         const taskElement = document.createElement("div");
-        taskElement.classList.add("task");
+
+       
 
         if (task.completed) {
             taskElement.classList.add("completed");
@@ -62,10 +60,9 @@ function displayTasks() {
             displayTasks();
         });
 
-        taskElement.appendChild(taskText);
-        taskElement.appendChild(completeButton);
-        taskElement.appendChild(deleteButton);
-
-        taskList.appendChild(taskElement);
+                taskElement.appendChild(taskText);
+                taskElement.appendChild(completeButton);
+                taskElement.appendChild(deleteButton);
+                taskList.appendChild(taskElement);
     }
 }
