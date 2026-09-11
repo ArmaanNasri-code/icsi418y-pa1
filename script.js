@@ -36,9 +36,7 @@ function displayTasks() {
         const task = tasks[i];
 
         const taskElement = document.createElement("div");
-
         taskElement.classList.add("task");
-        taskElement.classList.add(task.priority);
 
         if (task.completed) {
             taskElement.classList.add("completed");

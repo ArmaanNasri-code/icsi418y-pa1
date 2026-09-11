@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Task List</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,30 +11,26 @@
 
 <body>
 
-    <div class="container">
+    <h1>My Task List</h1>
 
-        <h1>My Task List</h1>
+    <form id="task-form">
 
-        <form id="task-form">
+        <label for="task-input">Task:</label>
+        <input id="task-input" type="text">
 
-            <label for="task-input">Task:</label>
-            <input id="task-input" type="text">
+        <label for="priority">Priority:</label>
 
-            <label for="priority">Priority:</label>
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
 
-            <select id="priority">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
+        <button type="submit">Add Task</button>
 
-            <button type="submit">Add Task</button>
+    </form>
 
-        </form>
-
-        <div id="task-list"></div>
-
-    </div>
+    <div id="task-list"></div>
 
 </body>
 

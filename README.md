@@ -21,6 +21,4 @@ Users can add tasks, select a priority level, mark tasks as completed, and delet
 
 ## Known Problems
 
-There are currently no known problems or incomplete features.
-
 Tasks are not saved after the page is refreshed.
